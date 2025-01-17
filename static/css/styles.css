@@ -1,0 +1,148 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-image: url('./img/united-states-america-geography-map-lettering-3d-render-usa-territory-typographic-art-poster_149852-1.jpg');
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  /* background: #000; */
+
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Container styling */
+.frist {
+
+
+  border: 2px solid white;
+  border-radius: 40px;
+  background-color: #000;
+  padding: 60px 80px;
+  /*border-radius: 12px;*/
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+  max-width: 800px;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Heading styling */
+.frist h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.frist h1:hover {
+  color:#76655d;
+  transform: scale(1.05);
+}
+
+.frist h3 {
+  font-size: 1.9rem;
+  margin-bottom: 40px;
+  font-weight: 400;
+  color: #fff;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.frist h3:hover {
+  opacity: 1;
+}
+
+/* Button styles */
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  padding: 20px 40px;
+  background-color: #fff;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  transform: translateY(0);
+}
+
+.btn button {
+  background-color: transparent;
+  border: none;
+  color: #000;
+  font-size: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.anchor{
+  text-decoration: none !important;
+}
+
+.btn:hover {
+  background-color: #76655d;
+
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover button {
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .frist {
+    padding: 40px 60px;
+  }
+
+  .frist h1 {
+    font-size: 3.2rem;
+  }
+
+  .frist h3 {
+    font-size: 1.7rem;
+  }
+
+  .btn {
+    padding: 18px 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .frist {
+    padding: 30px 50px;
+    max-width: 90%;
+  }
+
+  .frist h1 {
+    font-size: 2rem;
+  }
+
+  .frist h3 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    padding: 15px 30px;
+    font-size: 1.3rem;
+  }
+}
