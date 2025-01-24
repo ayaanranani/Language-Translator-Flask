@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/static/css/style3.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-left">Languify</div>
+        <div class="nav-right">
+            <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+            <a href="/index" class="nav-link">Main</a>
+            <a href="/about" class="nav-link">About Us</a>
+        </div>
+    </nav>
+
+    
+    <div class="about-section">
+        <h1>About Us</h1>
+        <p>We are the creators of this Translator tool. Our goal is to make language translation easy and accessible for everyone.</p>
+        <div class="creator-cards">
+            
+            <div class="creator-card">
+                <img src="/static/css/img/italy-black-stone-texture-map-isolated-black-with-shadow-3d-illustration_669435-1370.jpg" alt="Creator 1">
+                <h3>M.Ayaan</h3>
+                <p>Developer & Designer</p>
+                <a href="https://www.linkedin.com/in/ayaan-ranani-501206168" target="_blank">LinkedIn</a>
+            </div>
+            <div class="creator-card">
+                <img src="/static/css/img/italy-black-stone-texture-map-isolated-black-with-shadow-3d-illustration_669435-1370.jpg" alt="Creator 2">
+                <h3>Burhan</h3>
+                <p>Developer & Designer</p>
+                <a href="https://www.linkedin.com/in/burhan-ayaz-2955b7334/" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

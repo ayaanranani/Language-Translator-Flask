@@ -10,7 +10,7 @@ def home():
 @app.route("/index", methods=["GET", "POST"])
 def translate():
     translated_text = ""
-    target_language = "en"  # Default language in case none is selected
+    target_language = "default" 
     if request.method == "POST":
         text = request.form.get("text")
         target_language = request.form.get("language")
@@ -19,10 +19,14 @@ def translate():
                 translated_text = GoogleTranslator(target=target_language).translate(text)
             except Exception as e:
                 translated_text = f"Error: {str(e)}"
-    # Pass the translated text and target language to the template
     return render_template("index.html", translated_text=translated_text, target_language=target_language)
 
+@app.route("/about",methods = ["GET","POST"])
+def about():
+    return render_template("about.html")
+
+
 if __name__ == "__main__":
-    #app.run(host="0.0.0.0", debug=True)
+    # app.run(host="0.0.0.0", debug=True)
 
     app.run(debug=True)

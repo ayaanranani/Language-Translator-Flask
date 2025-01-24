@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", serif;
+}
+
+body {
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    background-image: url(/static/css/img/italy-black-stone-texture-map-isolated-black-with-shadow-3d-illustration_669435-1370.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar {
+    background-color: black; 
+    color: white; 
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px; 
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    border-bottom: 2px solid white; 
+    box-sizing: border-box; 
+}
+
+.nav-left {
+    font-size: 24px; 
+    font-weight: bold;
+}
+
+.nav-right {
+    display: flex;
+    gap: 15px; 
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-size: 18px; 
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #555; 
+    border-radius: 5px;
+}
+
+
+body {
+    padding-top: 60px; 
+}
+
+.about-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #000000;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 30px;
+    border-radius: 10px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px; 
+}
+
+.about-section h1 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+    max-width: 700px;
+    margin-bottom: 30px;
+}
+
+.creator-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.creator-card {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 250px;
+    padding: 20px;
+    text-align: center;
+}
+
+.creator-card img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.creator-card h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+

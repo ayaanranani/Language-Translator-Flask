@@ -13,7 +13,7 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
     <link rel="stylesheet" href="../static/css/style2.css" />
-    <title>Language Translator</title>
+    <title>Languify</title>
   </head>
   <body>
     <div class="container">
@@ -122,7 +122,7 @@
                     <option value="zh-cn">Chinese (Simplified)</option>
                     <option value="zh-tw">Chinese (Traditional)</option>
                     <option value="zu">Zulu</option>
-                  <!-- Add more languages as needed -->
+                  
                 </select>
               </div>
             </div>
@@ -162,17 +162,15 @@
       const inputTextArea = document.getElementById("input-text");
       const outputTextArea = document.getElementById("output-text");
 
-      // Real-time input mirroring
       inputTextArea.addEventListener("input", (event) => {
         const inputValue = event.target.value;
         outputTextArea.value = inputValue;
       });
 
-      // Speak functionality
       const speakButton = document.getElementById("speak-btn");
       speakButton.addEventListener("click", () => {
         const text = outputTextArea.value;
-        const lang = document.getElementById("language-code").value || "en-US"; // Default to English
+        const lang = document.getElementById("language-code").value || "en-US"; 
 
         if ("speechSynthesis" in window) {
           const utterance = new SpeechSynthesisUtterance(text);
@@ -183,7 +181,6 @@
         }
       });
 
-      // Copy functionality
       const copyButton = document.getElementById("copy-btn");
       copyButton.addEventListener("click", () => {
         const textToCopy = outputTextArea.value;
@@ -201,22 +198,31 @@
     });
 
 
-// Add event listener for Enter key press
 inputText.addEventListener("keydown", (event) => {
     if (event.key === "Enter") {
-        event.preventDefault(); // Prevent newline in the textarea
-        const input = inputText.value.trim(); // Get input text
-        const translation = translateText(input); // Translate the text
-        translatedText.textContent = translation; // Display translation
+        event.preventDefault(); 
+        const input = inputText.value.trim(); 
+        const translation = translateText(input); 
+        translatedText.textContent = translation; 
     }
 });
-
-
 
   </script>
 </html>
 
-
+<body>
+    
+    <nav class="navbar">
+        <div class="nav-left">Languify</div>
+        <div class="nav-right">
+            <a href="{{ url_for('home') }}" class="nav-link">Home</a>
+            <a href="/index" class="nav-link">Main</a>
+            <a href="/about" class="nav-link">About Us</a>
+            
+        </div>
+    </nav>
+</body>
+</html>
 
 
 

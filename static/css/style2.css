@@ -1,10 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  font-family: "Poppins", serif;
+}
 #translate-btn a {
   color: #000;
   text-decoration: none;
 }
 
 #translate-btn:hover a {
-  color: #fff;
+  color: #ffffff;
 }
 
 :root {
@@ -38,7 +44,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 body {
@@ -73,6 +78,7 @@ body.dark {
   border: 2px solid white;
   border-radius: 40px;
   flex: 1;
+  margin-top: 40px;
   padding: 30px;
   background-color: #000;
   height: 100%;
@@ -199,7 +205,7 @@ textarea::placeholder {
 
 .anchor {
   text-decoration: none;
-  color: #000;
+  color: #000000;
 }
 
 .container .text-area .chars {
@@ -258,14 +264,16 @@ textarea::placeholder {
   border-radius: 30px;
   border: none;
   outline: none;
-  color: var(--text-color);
+  color: #000;
   cursor: pointer;
-  background-color: var(--bg-color);
+  background-color: #ffffff;
 }
+
 
 .card-bottom button:hover {
   color: #fff !important;
-  background-color: #000A23;
+  background-color: #3A3836;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .container .center {
@@ -356,7 +364,6 @@ textarea::placeholder {
   gap: 30px;
 }
 
-/* General Styling for Dropdown */
 .dropdown-container {
   position: relative;
   width: 100%;
@@ -391,7 +398,6 @@ textarea::placeholder {
   color: #333;
 }
 
-/* Dropdown Menu */
 select {
   appearance: none;
   -webkit-appearance: none;
@@ -416,7 +422,6 @@ select:focus {
   border-color: #555;
 }
 
-/* Dropdown with a custom arrow */
 .dropdown-container select {
   background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z' fill='%23999'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -424,7 +429,6 @@ select:focus {
   background-size: 14px;
 }
 
-/* Media Queries */
 @media (max-width: 800px) {
   .container {
     width: 100%;
@@ -488,15 +492,91 @@ button{
 ion-icon{
   font-size: 20px;
 }
-/* Speak button styles */
   /* margin-left: 220px; */
-
-.card-bottom button#copy-btn{
-  margin-right: auto;
-}
 
 
 #translate-btn {
   position: relative;
-  top: 48px; /* Button ko neeche le aayega */
+  top: 48px; 
+}
+
+
+#speak-btn {
+  background-color: white; 
+  color: black; 
+  border: 1px solid black; 
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#speak-btn:hover {
+  background-color: #3A3836; 
+  color: white; 
+}
+
+
+#copy-btn {
+  background-color: white; 
+  color: black; 
+  border: 1px solid black; 
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#copy-btn:hover {
+  background-color: #3A3836; 
+  color: white; 
+}
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+
+.navbar {
+  background-color: black; 
+  color: white; 
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 30px;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1000; 
+  border-bottom: 2px solid white;
+}
+
+.nav-left {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  gap: 20px;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #555; 
+  border-radius: 5px;
+}
+
+
+body {
+  padding-top: 60px; 
 }
